@@ -9,15 +9,16 @@ resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
 const particles = [];
-const particleCount = 38;
+const particleCount = 55;
 
 for (let i = 0; i < particleCount; i++) {
   particles.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    vx: (Math.random() - 0.5) * 0.45,
-    vy: (Math.random() - 0.5) * 0.45,
-    size: Math.random() * 2 + 1
+    vx: (Math.random() - 0.5) * 0.35,
+    vy: (Math.random() - 0.5) * 0.35,
+    size: Math.random() * 2.4 + 1,
+    alpha: Math.random() * 0.5 + 0.2
   });
 }
 
@@ -35,7 +36,7 @@ function draw() {
 
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-    ctx.fillStyle = "rgba(74, 122, 235, 0.65)";
+    ctx.fillStyle = `rgba(90, 145, 255, ${p.alpha})`;
     ctx.fill();
 
     for (let j = i + 1; j < particles.length; j++) {
@@ -44,11 +45,11 @@ function draw() {
       const dy = p.y - p2.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      if (distance < 140) {
+      if (distance < 150) {
         ctx.beginPath();
         ctx.moveTo(p.x, p.y);
         ctx.lineTo(p2.x, p2.y);
-        ctx.strokeStyle = `rgba(116, 154, 240, ${0.22 - distance / 900})`;
+        ctx.strokeStyle = `rgba(110, 160, 255, ${0.16 - distance / 1200})`;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
