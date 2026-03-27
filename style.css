@@ -798,3 +798,133 @@ footer {
     padding: 20px;
   }
 }
+/* ===== Atelier professionnel ===== */
+.atelier-intro {
+  margin-bottom: 34px;
+}
+
+.atelier-intro-card {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 34px 30px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-md);
+}
+
+.atelier-intro-card h2 {
+  color: var(--blue);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.atelier-divider {
+  width: 110px;
+  height: 3px;
+  border-radius: 999px;
+  margin: 0 auto 22px;
+  background: linear-gradient(90deg, #2d4f99, #5d96ff);
+}
+
+.atelier-list {
+  display: grid;
+  gap: 26px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.atelier-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-md);
+  padding: 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.atelier-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--line-strong);
+}
+
+.atelier-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.atelier-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #5d96ff, #3770df);
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  box-shadow: 0 8px 18px rgba(61, 115, 223, 0.18);
+}
+
+.atelier-card h2 {
+  color: var(--blue);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.atelier-card p {
+  color: #3b4a5f;
+  margin-bottom: 18px;
+}
+
+.atelier-docs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--blue);
+  border: 1px solid rgba(117, 153, 222, 0.3);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline:hover {
+  color: white;
+  background: linear-gradient(135deg, #5d96ff, #3770df);
+  border-color: transparent;
+}
+
+.atelier-card h3 {
+  color: var(--blue);
+  font-size: 1.02rem;
+  margin-bottom: 10px;
+}
+
+.atelier-card ul {
+  padding-left: 20px;
+}
+
+.atelier-card li {
+  margin-bottom: 9px;
+  color: #334155;
+}
+
+@media (max-width: 640px) {
+  .atelier-intro-card,
+  .atelier-card {
+    padding: 22px;
+  }
+
+  .atelier-card h2 {
+    font-size: 1.28rem;
+  }
+}
