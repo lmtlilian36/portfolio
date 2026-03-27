@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio - Lilian Limet</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Lilian Limet</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <canvas id="bg-canvas"></canvas>
 
-<canvas id="bg-animation"></canvas>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">PORTFOLIO</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="formation.html">Formation</a>
+        <a href="parcours.html">Parcours</a>
+        <a href="projets.html">Projets</a>
+        <a href="stages.html">Mes stages</a>
+      </div>
+    </div>
+  </nav>
 
-<nav>
-<div class="logo">PORTFOLIO</div>
-<div>
-<a href="index.html">Accueil</a>
-<a href="formation.html">Formation</a>
-<a href="parcours.html">Parcours</a>
-<a href="projets.html">Projets</a>
-<a href="contact.html">Contact</a>
-</div>
-</nav>
+  <main class="container hero">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <p>Je m'appelle <strong>Lilian Limet</strong></p>
+    <p>Étudiant en <strong>BTS SIO option SISR</strong></p>
 
-<div class="container">
-<h1>Bienvenue</h1>
+    <section class="skills-columns">
+      <h2>Compétences acquises</h2>
 
-<div class="card">
-<p>Bienvenue sur le portfolio de <strong>Lilian Limet</strong>.</p>
-<p>Étudiant en BTS SIO option SISR.</p>
-</div>
+      <div class="grid-3">
+        <div class="skill-box">
+          <h3>Réseaux &amp;<br>Infrastructures</h3>
+          <div class="skill-divider"></div>
+          <ul>
+            <li>VLAN, routage inter-VLAN, NAT/PAT, ACL</li>
+            <li>Spanning Tree (STP), OSPF, HSRP, vPC</li>
+            <li>VPN, proxy / reverse proxy</li>
+            <li>Cluster, haute disponibilité</li>
+          </ul>
+        </div>
 
-</div>
+        <div class="skill-box">
+          <h3>Systèmes &amp;<br>Virtualisation</h3>
+          <div class="skill-divider"></div>
+          <ul>
+            <li>Active Directory, GPO, DFS</li>
+            <li>PKI, DHCP, DNS, bastion d’administration</li>
+            <li>Hyper-V, VMware, Proxmox</li>
+            <li>Gestion RAID, NAS</li>
+          </ul>
+        </div>
 
-<script src="script.js"></script>
+        <div class="skill-box">
+          <h3>Services, Sécurité &amp;<br>Outils</h3>
+          <div class="skill-divider"></div>
+          <ul>
+            <li>Tests d’intrusion (Kali Linux)</li>
+            <li>Pare-feu : Stormshield, Palo Alto</li>
+            <li>Supervision : Zabbix, GLPI</li>
+            <li>Docker, PowerShell, Bash, Ansible</li>
+            <li>Cloud : AWS, Microsoft Azure</li>
+            <li>Gestion de versions : Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 - Lilian Limet - Portfolio BTS SIO SISR</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
