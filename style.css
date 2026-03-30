@@ -367,12 +367,13 @@ strong{color:var(--text)}
 .project-hero-text{max-width:1050px;margin:auto;font-size:1.08rem;line-height:1.95}
 .project-methods-section{margin:34px 0}
 .project-methods-title{
-  color:#d93f61;
+  color:var(--green);
   font-size:2rem;
   font-weight:800;
   margin-bottom:24px;
   text-align:left;
 }
+
 .project-method-card{
   min-height:170px;
   padding:26px 20px;
@@ -381,18 +382,36 @@ strong{color:var(--text)}
   flex-direction:column;
   justify-content:space-between;
 }
-.project-method-card h3{color:#1f2d1f;font-size:1.2rem;line-height:1.4;margin-bottom:22px}
+
+.project-method-card h3{
+  color:var(--text);
+  font-size:1.2rem;
+  line-height:1.4;
+  margin-bottom:22px;
+}
+
 .project-method-card .btn{
-  background:linear-gradient(135deg,#d93f61,#c81f4d);
-  box-shadow:0 10px 22px rgba(201,31,77,.22);
+  background:linear-gradient(135deg,var(--green2),var(--apple));
+  box-shadow:0 10px 22px rgba(78,176,63,.22);
   align-self:center;
 }
+
+.project-method-card .btn:hover{
+  box-shadow:0 14px 28px rgba(78,176,63,.28);
+}
+
 .project-notion-card{
   max-width:1100px;
   margin:34px auto 0;
   padding:34px;
 }
-.project-notion-card h2,.project-notion-card h3{color:#d93f61;margin-bottom:14px}
+
+.project-notion-card h2,
+.project-notion-card h3{
+  color:var(--green);
+  margin-bottom:14px;
+}
+
 .project-notion-card h2{font-size:2rem}
 .project-notion-card h3{font-size:1.55rem;margin-top:26px}
 .project-notion-card p{line-height:1.95;margin-bottom:14px}
