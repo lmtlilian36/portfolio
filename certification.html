@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications - Lilian Limet</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .certif-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 0 40px;
+    }
+
+    .certif-title {
+      text-align: center;
+      color: var(--blue);
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .certif-line {
+      width: 130px;
+      height: 4px;
+      margin: 0 auto 46px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #2d8f4e, #9be53f);
+      box-shadow: 0 6px 18px rgba(98, 196, 78, 0.2);
+    }
+
+    .certif-section-label {
+      font-size: 0.95rem;
+      color: #355335;
+      margin-bottom: 24px;
+    }
+
+    .certif-section-label strong {
+      color: var(--text-main);
+    }
+
+    .certif-list {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+    }
+
+    .certif-card {
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 28px;
+      align-items: center;
+      padding: 10px 0 34px;
+      border-bottom: 1px solid rgba(129, 199, 112, 0.22);
+    }
+
+    .certif-card:last-child {
+      border-bottom: none;
+    }
+
+    .certif-content h2 {
+      font-size: 1.6rem;
+      color: var(--text-main);
+      margin-bottom: 18px;
+    }
+
+    .certif-content p {
+      max-width: 560px;
+      font-size: 1rem;
+      line-height: 1.9;
+      color: #3d563d;
+      margin-bottom: 18px;
+    }
+
+    .certif-content strong {
+      color: #203520;
+    }
+
+    .certif-logo-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 120px;
+      padding: 20px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px dashed rgba(129, 199, 112, 0.35);
+      color: var(--blue);
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .certif-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(135deg, #3da94f, #8de53b);
+      color: white;
+      border-radius: 10px;
+      padding: 10px 18px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(78, 176, 63, 0.22);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .certif-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(78, 176, 63, 0.28);
+    }
+
+    @media (max-width: 800px) {
+      .certif-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .certif-logo-placeholder {
+        min-height: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="bg-blobs">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">PORTFOLIO</a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="formation.html">Formation</a>
+        <a href="parcours.html">Parcours</a>
+        <a href="projets.html">Projets</a>
+        <a href="certification.html" class="active">Certifications</a>
+        <a href="stages.html">Mes stages</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="certif-page">
+      <h1 class="certif-title">Certifications</h1>
+      <div class="certif-line"></div>
+
+      <div class="certif-section-label">
+        <strong>Compétence :</strong><br>
+        - Organiser son développement professionnel
+      </div>
+
+      <div class="certif-list">
+
+        <article class="certif-card">
+          <div class="certif-content">
+            <h2>Défense du réseau</h2>
+            <p>
+              La certification <strong>Network Defense</strong> de Cisco NetAcad valide les
+              compétences en <strong>protection des infrastructures</strong>, traitement de la
+              surveillance, des <strong>pare-feu</strong> et de la <strong>détection d’intrusions</strong>.
+              Orientée vers la pratique, elle permet d’apprendre à neutraliser les menaces réseau,
+              avec une attestation de réussite à la clé.
+            </p>
+            <a href="#" class="certif-btn">Attestation</a>
+          </div>
+          <div class="certif-logo-placeholder">Cisco Networking Academy</div>
+        </article>
+
+        <article class="certif-card">
+          <div class="certif-content">
+            <h2>Notions de base sur les réseaux</h2>
+            <p>
+              La certification de <strong>Notions de base sur les réseaux</strong> de Cisco NetAcad
+              valide les <strong>fondamentaux des infrastructures IT</strong>, couvrant
+              l’<strong>adressage IPv4/IPv6</strong>, les protocoles TCP/IP et la
+              <strong>configuration de réseaux locaux</strong>. Axée sur l’initiation technique,
+              elle permet de maîtriser la connectivité et les services réseau essentiels.
+            </p>
+            <a href="#" class="certif-btn">Attestation</a>
+          </div>
+          <div class="certif-logo-placeholder">Cisco Networking Academy</div>
+        </article>
+
+        <article class="certif-card">
+          <div class="certif-content">
+            <h2>SecNum académie (ANSSI)</h2>
+            <p>
+              Le MOOC <strong>SecNumacadémie</strong> de l’ANSSI certifie les connaissances
+              essentielles en <strong>hygiène informatique</strong>, traitant du panorama de la SSI,
+              de l’<strong>authentification</strong> et de la <strong>sécurité du poste de travail</strong>.
+              Conçu pour des experts nationaux, il permet d’adopter les bons réflexes face aux
+              cybermenaces dans un cadre professionnel ou personnel.
+            </p>
+            <a href="#" class="certif-btn">Attestation</a>
+          </div>
+          <div class="certif-logo-placeholder">SecNum académie</div>
+        </article>
+
+        <article class="certif-card">
+          <div class="certif-content">
+            <h2>Pix</h2>
+            <p>
+              La certification <strong>Pix</strong> atteste de la <strong>maîtrise des compétences numériques</strong>
+              transversales, couvrant la gestion des données, la sécurité numérique et la collaboration en ligne.
+              Reconnue par l’État et le monde professionnel, elle évalue la capacité à
+              <strong>utiliser les outils digitaux</strong> de manière efficace et responsable.
+            </p>
+            <a href="#" class="certif-btn">Attestation</a>
+          </div>
+          <div class="certif-logo-placeholder">Pix</div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 - Lilian Limet - Portfolio BTS SIO SISR</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
