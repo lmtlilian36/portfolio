@@ -929,3 +929,6 @@ footer {
     font-size: 1.28rem;
   }
 }
+.certif-content p {
+  margin-bottom: 0;
+}
