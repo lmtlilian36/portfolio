@@ -473,3 +473,86 @@ footer{
   .project-notion-card h2{font-size:1.7rem}
   .project-notion-card h3,.atelier-card h2{font-size:1.3rem}
 }
+/* ===== CUB ===== */
+.cub-top-section {
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
+
+.cub-text-card {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(14px);
+  padding: 32px;
+}
+
+.cub-text-card p {
+  color: #3b4d3b;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  max-width: 760px;
+}
+
+.cub-docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 24px 0 28px;
+}
+
+.cub-competence-box {
+  max-width: 560px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(129, 199, 112, 0.22);
+  border-radius: 18px;
+  padding: 20px 22px;
+}
+
+.cub-competence-box h2 {
+  color: var(--green);
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.cub-competence-box ul {
+  padding-left: 20px;
+}
+
+.cub-competence-box li {
+  color: #385338;
+  line-height: 1.7;
+}
+
+.cub-bottom-section {
+  margin-top: 26px;
+}
+
+.cub-bottom-card {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-top: 26px;
+  border-top: 1px solid rgba(129, 199, 112, 0.22);
+}
+
+.cub-bottom-card p {
+  color: #3b4d3b;
+  line-height: 1.95;
+  margin-bottom: 16px;
+  max-width: 900px;
+}
+
+@media (max-width: 640px) {
+  .cub-text-card,
+  .cub-competence-box {
+    padding: 22px;
+  }
+
+  .cub-docs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
