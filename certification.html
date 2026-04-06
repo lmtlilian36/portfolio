@@ -3,135 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Certifications - Lilian Limet</title>
+  <title>Parcours - Lilian Limet</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .certif-page {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px 0 40px;
-    }
-
-    .certif-title {
-      text-align: center;
-      color: var(--blue);
-      font-size: clamp(2.2rem, 4vw, 3rem);
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-
-    .certif-line {
-      width: 130px;
-      height: 4px;
-      margin: 0 auto 46px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, #2d8f4e, #9be53f);
-      box-shadow: 0 6px 18px rgba(98, 196, 78, 0.2);
-    }
-
-    .certif-section-label {
-      font-size: 0.95rem;
-      color: #355335;
-      margin-bottom: 24px;
-    }
-
-    .certif-section-label strong {
-      color: var(--text-main);
-    }
-
-    .certif-list {
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-    }
-
-    .certif-card {
-      display: grid;
-      grid-template-columns: 1fr 220px;
-      gap: 28px;
-      align-items: center;
-      padding: 10px 0 34px;
-      border-bottom: 1px solid rgba(129, 199, 112, 0.22);
-    }
-
-    .certif-card:last-child {
-      border-bottom: none;
-    }
-
-    .certif-content h2 {
-      font-size: 1.6rem;
-      color: var(--text-main);
-      margin-bottom: 18px;
-    }
-
-    .certif-content p {
-      max-width: 560px;
-      font-size: 1rem;
-      line-height: 1.9;
-      color: #3d563d;
-      margin-bottom: 18px;
-    }
-
-    .certif-content strong {
-      color: #203520;
-    }
-
-    .certif-logo-placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 120px;
-      padding: 20px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.55);
-      border: 1px dashed rgba(129, 199, 112, 0.35);
-      color: var(--blue);
-      font-size: 1.1rem;
-      font-weight: 700;
-      text-align: center;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .certif-btn {
-      display: inline-block;
-      text-decoration: none;
-      background: linear-gradient(135deg, #3da94f, #8de53b);
-      color: white;
-      border-radius: 10px;
-      padding: 10px 18px;
-      font-size: 0.92rem;
-      font-weight: 700;
-      box-shadow: 0 10px 24px rgba(78, 176, 63, 0.22);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .certif-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 28px rgba(78, 176, 63, 0.28);
-    }
-
-    @media (max-width: 800px) {
-      .certif-card {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
-
-      .certif-logo-placeholder {
-        min-height: 90px;
-      }
-    }
-  </style>
 </head>
 <body>
   <canvas id="bg-canvas"></canvas>
-
-  <div class="bg-blobs">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+  <div class="bg-blobs"><span></span><span></span><span></span><span></span><span></span></div>
 
   <nav class="navbar">
     <div class="nav-inner">
@@ -139,85 +16,146 @@
       <div class="nav-links">
         <a href="index.html">Accueil</a>
         <a href="formation.html">Formation</a>
-        <a href="parcours.html">Parcours</a>
+        <a href="parcours.html" class="active">Parcours</a>
         <a href="projets.html">Projets</a>
-        <a href="certification.html" class="active">Certifications</a>
-        <a href="stages.html">Mes stages</a>
+        <a href="certification.html">Certifications</a>
       </div>
     </div>
   </nav>
 
   <main class="container">
-    <section class="certif-page">
-      <h1 class="certif-title">Certifications</h1>
-      <div class="certif-line"></div>
+    <section class="timeline-wrapper">
+      <h1 class="timeline-title">Mon Parcours Scolaire</h1>
+      <div class="timeline-bar-title"></div>
 
-      <div class="certif-section-label">
-        <strong>Compétence :</strong><br>
-        - Organiser son développement professionnel
+      <div class="timeline">
+        <div class="timeline-item left blue">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-label">2023 - 2026</div>
+            <div class="timeline-content">
+              <h3>BTS SIO Option SISR</h3>
+              <p><strong>Lycée Paul Louis Courier</strong>, 37000 - Tours</p>
+              <p>Brevet de Technicien Supérieur aux Services Informatiques aux Organisations.</p>
+              <p>Option SISR : Solutions d’Infrastructure, Systèmes et Réseaux.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right pink">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-label">2020 - 2023</div>
+            <div class="timeline-content">
+              <h3>Bac Pro Système Numérique option RISC</h3>
+              <p><strong>Lycée Thérèse Planiol</strong>, 37600 - Loches</p>
+              <p>Système Numérique - Réseaux Informatiques et Systèmes Communicants.</p>
+              <p>Mention assez bien.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stages-section">
+      <h2 class="timeline-title">Mes Stages</h2>
+      <div class="timeline-bar-title"></div>
+
+      <p class="stages-intro">
+        Durant les stages de BTS SIO, j’ai eu l’opportunité de découvrir le fonctionnement
+        d’un service informatique en environnement professionnel.
+      </p>
+
+      <div class="stage-modern-card">
+        <div class="stage-modern-header">
+          <div>
+            <h3>Stage de deuxième année - CHU de Châteauroux</h3>
+            <p class="stage-period"><strong>Période :</strong> 05/01/2026 - 20/02/2026</p>
+          </div>
+          <div class="stage-logo-box">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/0d/Logo_Centre_hospitalier_Chateauroux-Le_Blanc.svg/512px-Logo_Centre_hospitalier_Chateauroux-Le_Blanc.svg.png" alt="Logo CHU Châteauroux" class="stage-logo">
+          </div>
+        </div>
+
+        <div class="stage-modern-grid">
+          <div class="stage-mini-card">
+            <h4>Présentation</h4>
+            <p>En deuxième année de BTS SIO option SISR, j’ai effectué un stage au sein du <strong>Centre Hospitalier de Châteauroux</strong>, plus précisément dans le <strong>pôle support utilisateur</strong>.</p>
+          </div>
+          <div class="stage-mini-card">
+            <h4>Missions</h4>
+            <ul>
+              <li>Mise à jour des clients légers et des firmwares</li>
+              <li>Bascule vers une nouvelle ferme de serveurs</li>
+              <li>Gestion du support utilisateur et du ticketing avec GLPI</li>
+              <li>Administration Active Directory et gestion des droits utilisateurs</li>
+              <li>Masterisation et déploiement des postes via PXE et WDS</li>
+              <li>Recensement et gestion du parc informatique dans GLPI</li>
+            </ul>
+          </div>
+          <div class="stage-mini-card">
+            <h4>Compétences E5</h4>
+            <ul>
+              <li>Gérer le patrimoine informatique</li>
+              <li>Répondre aux incidents et aux demandes d’assistance</li>
+              <li>Mettre à disposition des utilisateurs un service informatique</li>
+              <li>Travailler en mode projet</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stage-docs-row">
+          <a class="stage-btn" href="Rapport de stage CHU.docx.pdf" target="_blank">Rapport de stage</a>
+          <a class="stage-btn" href="#" target="_blank">Documentation : Mission 1</a>
+          <a class="stage-btn" href="#" target="_blank">Documentation : Mission 2</a>
+          <a class="stage-btn" href="#" target="_blank">Documentation : Mission 3</a>
+          <a class="stage-btn" href="#" target="_blank">Documents complémentaires</a>
+        </div>
       </div>
 
-      <div class="certif-list">
-
-        <article class="certif-card">
-          <div class="certif-content">
-            <h2>Défense du réseau</h2>
-            <p>
-              La certification <strong>Network Defense</strong> de Cisco NetAcad valide les
-              compétences en <strong>protection des infrastructures</strong>, traitement de la
-              surveillance, des <strong>pare-feu</strong> et de la <strong>détection d’intrusions</strong>.
-              Orientée vers la pratique, elle permet d’apprendre à neutraliser les menaces réseau,
-              avec une attestation de réussite à la clé.
-            </p>
-            <a href="#" class="certif-btn">Attestation</a>
+      <div class="stage-modern-card">
+        <div class="stage-modern-header">
+          <div>
+            <h3>Stage de première année - TUBCONCEPT</h3>
+            <p class="stage-period"><strong>Période :</strong> 19/05/2025 - 25/06/2025</p>
           </div>
-          <div class="certif-logo-placeholder">Cisco Networking Academy</div>
-        </article>
-
-        <article class="certif-card">
-          <div class="certif-content">
-            <h2>Notions de base sur les réseaux</h2>
-            <p>
-              La certification de <strong>Notions de base sur les réseaux</strong> de Cisco NetAcad
-              valide les <strong>fondamentaux des infrastructures IT</strong>, couvrant
-              l’<strong>adressage IPv4/IPv6</strong>, les protocoles TCP/IP et la
-              <strong>configuration de réseaux locaux</strong>. Axée sur l’initiation technique,
-              elle permet de maîtriser la connectivité et les services réseau essentiels.
-            </p>
-            <a href="#" class="certif-btn">Attestation</a>
+          <div class="stage-logo-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/No_image_available.svg/480px-No_image_available.svg.png" alt="Logo TUBCONCEPT" class="stage-logo">
           </div>
-          <div class="certif-logo-placeholder">Cisco Networking Academy</div>
-        </article>
+        </div>
 
-        <article class="certif-card">
-          <div class="certif-content">
-            <h2>SecNum académie (ANSSI)</h2>
-            <p>
-              Le MOOC <strong>SecNumacadémie</strong> de l’ANSSI certifie les connaissances
-              essentielles en <strong>hygiène informatique</strong>, traitant du panorama de la SSI,
-              de l’<strong>authentification</strong> et de la <strong>sécurité du poste de travail</strong>.
-              Conçu pour des experts nationaux, il permet d’adopter les bons réflexes face aux
-              cybermenaces dans un cadre professionnel ou personnel.
-            </p>
-            <a href="#" class="certif-btn">Attestation</a>
+        <div class="stage-modern-grid">
+          <div class="stage-mini-card">
+            <h4>Présentation</h4>
+            <p>En première année de BTS SIO option SISR, j’ai effectué un stage au sein de <strong>TUBCONCEPT</strong>, une entreprise spécialisée dans la commercialisation de matériel pour la plomberie, le chauffage, l’électricité et l’outillage.</p>
           </div>
-          <div class="certif-logo-placeholder">SecNum académie</div>
-        </article>
-
-        <article class="certif-card">
-          <div class="certif-content">
-            <h2>Pix</h2>
-            <p>
-              La certification <strong>Pix</strong> atteste de la <strong>maîtrise des compétences numériques</strong>
-              transversales, couvrant la gestion des données, la sécurité numérique et la collaboration en ligne.
-              Reconnue par l’État et le monde professionnel, elle évalue la capacité à
-              <strong>utiliser les outils digitaux</strong> de manière efficace et responsable.
-            </p>
-            <a href="#" class="certif-btn">Attestation</a>
+          <div class="stage-mini-card">
+            <h4>Missions</h4>
+            <ul>
+              <li>Installation et configuration d’un pare-feu OPNsense pour sécuriser l’infrastructure réseau</li>
+              <li>Définition et mise en place de règles WAN et LAN pour filtrer les flux réseau</li>
+              <li>Intégration d’outils de sécurité comme CrowdSec et Fail2Ban</li>
+              <li>Mise en place d’une solution d’accès distant sécurisée avec Tailscale</li>
+              <li>Configuration d’un accès VPN pour permettre aux employés de se connecter au réseau de l’entreprise</li>
+            </ul>
           </div>
-          <div class="certif-logo-placeholder">Pix</div>
-        </article>
+          <div class="stage-mini-card">
+            <h4>Compétences E5</h4>
+            <ul>
+              <li>Gérer le patrimoine informatique</li>
+              <li>Mettre à disposition des utilisateurs un service informatique</li>
+              <li>Répondre aux incidents et aux demandes d’assistance</li>
+              <li>Travailler en mode projet</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="stage-docs-row">
+          <a class="stage-btn" href="Rapport_de_stage.pdf" target="_blank">Rapport de stage</a>
+          <a class="stage-btn" href="#" target="_blank">Documentation : Mission 1</a>
+          <a class="stage-btn" href="#" target="_blank">Documentation : Mission 2</a>
+          <a class="stage-btn" href="#" target="_blank">Annexes</a>
+        </div>
       </div>
     </section>
   </main>
