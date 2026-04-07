@@ -12,13 +12,13 @@
   --text2:#495349;
   --muted:#6b746b;
 
-  --green:#5f9c2f;
-  --green2:#79c83a;
-  --apple:#a7ef55;
-  --apple-soft:rgba(167,239,85,.18);
+  --green:#1f5c3a;
+  --green2:#2d6f47;
+  --apple:#3f8a5a;
+  --apple-soft:rgba(31,92,58,.18);
 
-  --line:rgba(120,145,120,.16);
-  --line2:rgba(130,180,90,.32);
+  --line:rgba(70,110,85,.16);
+  --line2:rgba(45,111,71,.32);
 
   --shadow-sm:0 8px 24px rgba(40,50,40,.06);
   --shadow:0 16px 38px rgba(40,50,40,.08);
@@ -28,6 +28,7 @@
   --r2:20px;
   --r3:26px;
   --max:1180px;
+}
 }
 
 html{scroll-behavior:smooth}
